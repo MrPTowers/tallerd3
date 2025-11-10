@@ -3,20 +3,22 @@
 <head>
     <title>Taller D3 Basics</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<script src="d3.v7.min.js"></script>
-	<script src="main.js"></script>
+<body onload="main()">
+	<script src="js/d3.v7.min.js"></script>
+	<script src="js/barchart.js"></script>
+	<script src="js/main.js"></script>
 	<h1>Taller D3 Basics</h1>
 
 	<div class="container">
 		<div class="row">
 			<div class="column">
-				<!-- ADD VIS HERE -->
+				<div id="barchart" class="visDiv"></div>
 			</div>
 			<div class="column">
-				<!-- ADD VIS HERE -->
+				<div id="scatterplot" class="visDiv"></div>
 			</div>
 		</div>
 	</div>

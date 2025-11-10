@@ -1,11 +1,18 @@
-d3.csv("data/data.csv").then(data => {
-		data.forEach(d => {
-		  	d.number = +d.number;
-		});
+
+async function main(){
+	data = [
+		{ id:0, color: "red"},
+		{ id:1, color: "red"},
+		{ id:2, color: "green"},
+		{ id:3, color: "red"},
+		{ id:4, color: "green" },
+		{ id:5, color: "red"},
+		{ id:6, color:"green" },
+		{ id:7, color: "red"},
+		{ id:8, color:"green" },
+		{ id:9, color: "red"}
+	];
 	
-	//barchart = new Barchart("#barchart", data)
-	//scatterplot = new Scatterplot("#scatterplot", data);
- 	
-}).catch(error => {
-  	console.error('Error loading the data');
-});	
+	barchart = new Barchart({parentElement: "#barchart"}, data);
+
+}
